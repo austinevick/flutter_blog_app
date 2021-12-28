@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
 
-import 'package:flutter_blog_app/data/user.dart';
+import 'user.dart';
 
 class Post {
   final int? id;
