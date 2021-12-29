@@ -4,7 +4,7 @@ import 'package:flutter_blog_app/data/model/user.dart';
 
 
 class Post {
-  final int? id;
+  final String? id;
   final String? text;
   final String? image;
   final int? likes;
@@ -38,10 +38,10 @@ class Post {
 
   factory Post.fromMap(Map<String, dynamic> map) {
     return Post(
-      id: map['id']?.toInt(),
+      id: map['id'],
       text: map['text'],
       image: map['image'],
-      likes: map['likes']?.toInt(),
+      likes: map['likes'],
       link: map['link'],
       tags: List<String>.from(map['tags']),
       publishDate: map['publishDate'],

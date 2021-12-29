@@ -4,7 +4,9 @@ class User {
   final String? firstName;
   final String? lastName;
   final String? picture;
+  final String? email;
   User({
+    this.email,
     this.id,
     this.title,
     this.firstName,
@@ -13,13 +15,7 @@ class User {
   });
 
   Map<String, dynamic> toMap() {
-    return {
-      'id': id,
-      'title': title,
-      'firstName': firstName,
-      'lastName': lastName,
-      'picture': picture,
-    };
+    return {'firstName': firstName, 'lastName': lastName, 'email': email};
   }
 
   factory User.fromMap(Map<String, dynamic> map) {
