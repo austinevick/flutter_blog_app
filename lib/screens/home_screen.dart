@@ -10,7 +10,7 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   final baseUrl = 'https://dummyapi.io/data/v1';
-  final appId = '61c876be4b10eaabd3cc6e66';
+  final appId = '61ca56b3d08ac849fac774a5';
 
   queryData() async {
     final response =
@@ -19,6 +19,7 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   @override
+  
   Widget build(BuildContext context) {
     queryData();
     return Container();
