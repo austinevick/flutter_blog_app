@@ -1,15 +1,10 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
-<<<<<<< HEAD
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-=======
-import 'package:flutter_blog_app/data/blog_remote_data_source/remote_data_source.dart';
->>>>>>> 7086db79807a707a4c714a203f69c18215ae8699
 import 'package:http/http.dart';
 
 import 'common/constant.dart';
-import 'data/data_source/remote_data_source.dart';
 import 'screens/home_screen.dart';
 
 void main() {
