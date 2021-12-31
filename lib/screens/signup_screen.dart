@@ -19,7 +19,6 @@ class _SignUpScreenState extends State<SignUpScreen> {
     final user =
         User(firstName: fName.text, lastName: lName.text, email: email.text);
     try {
-      BlogRepositoryProvider.createUser(user);
       setState(() => isLoading = false);
     } catch (e) {
       print(e);
